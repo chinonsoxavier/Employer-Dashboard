@@ -1,0 +1,157 @@
+*{
+   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.flex {
+  display: flex;
+}
+.none {
+  display: none;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.aic {
+  align-items: center;
+}
+.ais {
+   align-items: stretch;
+}
+.aife {
+  align-items: flex-end;
+}
+.aifs {
+  align-items: flex-start;
+}
+
+.jcc {
+  justify-content: center;
+}
+.jcfe {
+  justify-content: flex-end;
+}
+.jcfs {
+  justify-content: flex-start;
+}
+.jcsa {
+  justify-content: space-around;
+}
+.jcsb {
+  justify-content: space-between;
+}
+
+.fdc {
+  flex-direction: column;
+}
+.fdrr {
+  flex-direction: row-reverse;
+}
+
+.obfct {
+  object-fit: contain;
+}
+.obfcv {
+  object-fit: cover;
+}
+
+.bgr {
+  background-color: red;
+}
+.bgb {
+  background-color: blue;
+}
+.bgg {
+  background-color: green;
+}
+.bgb {
+  background-color: black;
+}
+.bgw {
+  background-color: white;
+}
+.bgt {
+  background-color: transparent;
+}
+.black {
+  color: black;
+}
+.brown {
+  background-color: brown;
+}
+
+.flex1 {
+  flex: 1;
+}
+.flex2 {
+  flex: 2;
+}
+.flex3 {
+  flex: 3;
+}
+.flex4 {
+  flex: 4;
+}
+.flex5 {
+  flex: 5;
+}
+.flex6 {
+  flex: 6;
+}
+.flex7 {
+  flex: 7;
+}
+
+.cp {
+  cursor: pointer;
+}
+
+.absolute {
+  position: absolute;
+  background-size: 100%;
+  background-position: 30%;
+}
+.relative {
+  position: absolute;
+  /* margin-bottom: -320px; */
+  max-width: 200px;
+  top: 60px;
+  left: 14vh;
+  height: 290px;
+  
+}
+
+.c{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.v{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.s{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color:rgb(231, 250, 231);
+}
+
+.settingsLink{
+  margin:10px 0;
+}
+
+.settingsInput{
+  /* height:40px; */
+}
+
+@media (max-width:890px)  {
+  #settingsInput{
+    width:100%;
+  }
+}
+
+.link{
+  font-size: inherit;
+  color:inherit;
+  text-decoration: none;
+}
