@@ -8,6 +8,7 @@ box-sizing:border-box;
 height:100%;
 padding:0px 2px;
 margin-top:-1px;
+padding-top:6px;
 border-top:1px solid #eee;
 `;
 const Wrapper = styled.div`

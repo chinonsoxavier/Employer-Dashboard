@@ -50,7 +50,7 @@ const HeaderImgCon = styled.div`
   height: 40px;
   border: 2px solid #145044;
   border-radius:50%;
-  ${mobile({width:'33px',height:'33px'})}
+  ${mobile({width:'37px',height:'37px'})}
 `;
 const HeaderImg = styled.img`
 width:100%;
@@ -115,7 +115,7 @@ const DashboardFunds = styled.div`
   color: white;
   border-radius: 13px;
   padding: 32px;
-  height: 100%;
+  height: 130px;
   width: 100%;
   box-sizing: border-box;
   ${newlmobile({ padding: "15px 6px" })};
@@ -223,7 +223,7 @@ const MobileDashboard = () => {
             </HeaderRight>
           </Header>
         </Top>
-        <Middle className="flex aic jcsb fdc">
+        <Middle className="flex aifs jfsb fdc">
           <QuickStatsCon>
             <QuickStatsHeaderCon>
               <QuickStatsHeaderText>QUICK STATS</QuickStatsHeaderText>

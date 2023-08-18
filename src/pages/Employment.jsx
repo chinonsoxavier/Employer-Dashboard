@@ -26,6 +26,13 @@ const HeaderCon = styled.div`
   ${mobile({ display: "none" })}
 `;
 
+const Cons = styled.div`
+display:none;
+${mobile({display:'block'})};
+position:fixed;
+bottom:0;
+`
+
 const Employment = () => {
   return (
     <Container>
@@ -44,14 +51,20 @@ const Employment = () => {
           <HeaderCon style={{ position: "sticky", top: 0, zIndex: 999 }}>
             <Header />
           </HeaderCon>
-          <DashboardCon style={{}}>
+          <DashboardCon style={{ height: "100%", overflowX: "hidden" }}>
             <div
-              style={{ height: "90%", overflowY: "scroll", paddingBottom: "0" }}
+              style={{
+                height: "90%",
+                paddingBottom: "0",
+                // overflowY: "scroll",
+                paddingBottom: "60px",
+                overflowX: "hidden",
+              }}
             >
               <HomeSection />
               <Dashboard />
             </div>
-            <div
+            <Cons
               style={{
                 height: "10%",
                 width: "100%",
@@ -61,7 +74,7 @@ const Employment = () => {
               }}
             >
               <MobileFooter route="employment" />
-            </div>
+            </Cons>
           </DashboardCon>
         </Con>
       </Wrapper>
