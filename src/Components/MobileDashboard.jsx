@@ -117,6 +117,7 @@ const DashboardFunds = styled.div`
   padding: 32px;
   height: 130px;
   width: 100%;
+  max-height:100px;
   box-sizing: border-box;
   ${newlmobile({ padding: "15px 6px" })};
   ${smobile({ padding: "15px 10px",marginTop:'20px' })};
