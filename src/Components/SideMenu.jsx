@@ -19,8 +19,7 @@ min-width:270px;
 `;
 const Wrapper = styled.div`height:120px`;
 const HeaderSection = styled.div`
-  background: #145044;
-  height:130px;
+  
 `;
 const HeaderSectionImg = styled.img`
 width:100%;
@@ -54,7 +53,7 @@ const SideMenu = ({route}) => {
     <Container>
       <Wrapper>
         <HeaderSection className="flex aic jcc" >
-          <HeaderSectionImg src={require(".././images/logo3.png")} alt="img" />
+          <HeaderSectionImg src={require(".././images/logo.png")} alt="img" />
         </HeaderSection>
         <RoutesCon className="c">
           <Routes
