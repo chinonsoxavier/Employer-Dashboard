@@ -72,7 +72,7 @@ const QuickStatsCon = styled.div`
   ${smobile({padding:'2px 4px'})}
 `;
 const QuickStatsHeaderCon = styled.div`
-  padding-bottom: 15px;
+  padding-bottom: 0;
   ${newlmobile({ paddingBottom: "2px" })}
 `;
 const QuickStatsHeaderText = styled.span`
