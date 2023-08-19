@@ -122,7 +122,7 @@ const DashboardFunds = styled.div`
   box-sizing: border-box;
   flex:2;
   ${newlmobile({ padding: "15px 6px" })};
-  ${smobile({ padding: "15px 10px",marginTop:'20px' })};
+  ${smobile({ padding: "15px 10px",marginTop:'0' })};
 `;
 const DashboardFundsLeft = styled.div`
 flex:1;
@@ -232,7 +232,7 @@ const MobileDashboard = () => {
             </HeaderRight>
           </Header>
         </Top>
-        <Middle className="flex aifs jfsb fdc">
+        <Middle className="flex aifs jcfs fdc">
           <QuickStatsCon>
             <QuickStatsHeaderCon>
               <QuickStatsHeaderText>QUICK STATS</QuickStatsHeaderText>
