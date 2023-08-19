@@ -1,4 +1,5 @@
-import { AttachMoneyOutlined, ElectricalServicesOutlined, LocalAtmOutlined, Notifications, NotificationsNoneOutlined, PersonAddAlt1Outlined, PriceChangeOutlined, RemoveRedEyeOutlined, RequestQuoteOutlined, SavingsOutlined, SendOutlined, VisibilityOff, WifiCalling3Outlined, WifiOffOutlined } from '@mui/icons-material';
+
+ { AttachMoneyOutlined, ElectricalServicesOutlined, LocalAtmOutlined, Notifications, NotificationsNoneOutlined, PersonAddAlt1Outlined, PriceChangeOutlined, RemoveRedEyeOutlined, RequestQuoteOutlined, SavingsOutlined, SendOutlined, VisibilityOff, WifiCalling3Outlined, WifiOffOutlined } from '@mui/icons-material';
 import styled from 'styled-components';
 import { mmobile, mobile, newlmobile, smobile } from '../responsive';
 import MobileFooter from './MobileFooter';
@@ -21,19 +22,21 @@ width:100%;
 const Middle = styled.div`
   height: 84%;
   width: 100%;
-  box-sizing:border-box;
-//   padding-bottom:10px;
+  box-sizing:border-box; 
+padding-bottom:50px;
 `;
 const Bottom = styled.div`
   height: 8%;
 // padding-bottom:10px;
   width: 100%;
+position:fixed;
+bottom:0;
 `;
 const Header = styled.div`
 box-sizing:border-box;
 padding:6px 0;
 position:sticky;
-${mmobile({padding:'7px 0'})}
+${mmobile({padding:'7px 0'})};
 
 top:0;
 `
@@ -69,7 +72,7 @@ const QuickStatsCon = styled.div`
   ${smobile({padding:'2px 4px'})}
 `;
 const QuickStatsHeaderCon = styled.div`
-  padding-bottom: 15px;
+  padding-bottom: 0;
   ${newlmobile({ paddingBottom: "2px" })}
 `;
 const QuickStatsHeaderText = styled.span`
@@ -81,6 +84,7 @@ const QuickStatsHeaderText = styled.span`
 const QuickStatsWrapper = styled.div`
 gap:8px;
 width:100%;
+height:100%;
 `
 const QuickStats = styled.div`
   background: #eee;
@@ -120,9 +124,9 @@ const DashboardFunds = styled.div`
   width: 100%;
   max-height:130px;
   box-sizing: border-box;
-  flex:2;
+  flex:1;
   ${newlmobile({ padding: "15px 6px" })};
-  ${smobile({ padding: "15px 10px",marginTop:'20px' })};
+  ${smobile({ padding: "15px 10px",marginTop:'0' })};
 `;
 const DashboardFundsLeft = styled.div`
 flex:1;
