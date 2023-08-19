@@ -1,4 +1,5 @@
-import { AttachMoneyOutlined, ElectricalServicesOutlined, LocalAtmOutlined, Notifications, NotificationsNoneOutlined, PersonAddAlt1Outlined, PriceChangeOutlined, RemoveRedEyeOutlined, RequestQuoteOutlined, SavingsOutlined, SendOutlined, VisibilityOff, WifiCalling3Outlined, WifiOffOutlined } from '@mui/icons-material';
+
+ { AttachMoneyOutlined, ElectricalServicesOutlined, LocalAtmOutlined, Notifications, NotificationsNoneOutlined, PersonAddAlt1Outlined, PriceChangeOutlined, RemoveRedEyeOutlined, RequestQuoteOutlined, SavingsOutlined, SendOutlined, VisibilityOff, WifiCalling3Outlined, WifiOffOutlined } from '@mui/icons-material';
 import styled from 'styled-components';
 import { mmobile, mobile, newlmobile, smobile } from '../responsive';
 import MobileFooter from './MobileFooter';
@@ -21,13 +22,15 @@ width:100%;
 const Middle = styled.div`
   height: 84%;
   width: 100%;
-  box-sizing:border-box;
-//   padding-bottom:10px;
+  box-sizing:border-box; 
+padding-bottom:50px;
 `;
 const Bottom = styled.div`
   height: 8%;
 // padding-bottom:10px;
   width: 100%;
+position:fixed;
+bottom:0;
 `;
 const Header = styled.div`
 box-sizing:border-box;
