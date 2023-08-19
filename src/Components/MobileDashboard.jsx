@@ -36,7 +36,7 @@ const Header = styled.div`
 box-sizing:border-box;
 padding:6px 0;
 position:sticky;
-${mmobile({padding:'7px 0'})}
+${mmobile({padding:'7px 0'})};
 
 top:0;
 `
