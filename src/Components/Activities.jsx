@@ -111,7 +111,7 @@ const MyActivitiesWrapperBottomImg = styled.img`
 const MyActivitiesWrapperBottomTxt = styled.span`
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size:15px;
-  font-weight:400;
+  font-weight:500;
 `;
 
 const Activities = () => {

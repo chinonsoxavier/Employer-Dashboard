@@ -65,6 +65,7 @@ const QuickStatsCon = styled.div`
   box-sizing: border-box;
   padding:12px 7px;
   width:100%;
+  flex:1;
   ${smobile({padding:'2px 4px'})}
 `;
 const QuickStatsHeaderCon = styled.div`
@@ -115,10 +116,11 @@ const DashboardFunds = styled.div`
   color: white;
   border-radius: 13px;
   padding: 32px;
-  height: 130px;
+  height: 140px;
   width: 100%;
-  max-height:100px;
+  max-height:130px;
   box-sizing: border-box;
+  flex:2;
   ${newlmobile({ padding: "15px 6px" })};
   ${smobile({ padding: "15px 10px",marginTop:'20px' })};
 `;
@@ -160,6 +162,11 @@ const DashboardFundsButton = styled.button`
 
 const QuickActionsCon = styled.div`
 width:100%;
+height:max-content;
+flex:3;
+// background:red;
+padding-bottom:10px;
+box-sizing:border-box;
 `
 const QuickActionsHeaderCon = styled.div`
 padding:10px 0;
@@ -178,6 +185,7 @@ grid-template-columns:1fr 1fr 1fr;
 grid-gap:20px;
 box-sizing:border-box;
 padding:13px 0;
+height:93%;
 `
 const QuickActions = styled.div`
 width:100%;

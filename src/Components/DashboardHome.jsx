@@ -169,19 +169,24 @@ const PayRollEmpNum = styled.span`
   margin:10px 0;
 `;
 const PayRollEmpDataCon = styled.div`
-width:100%;
+  width: 100%;
+  border-radius: 9px;
 `;
 const PayRollEmpDataConLeft = styled.div`
-border-top:10px solid red;
+border-top:9px solid red;
+border-top-left-radius:5px;
+border-bottom-left-radius:5px;
 // height:12px;
 flex:1;
 width:100%;
 `;
 const PayRollEmpDataConRight = styled.div`
-  border-top:10px solid  blue;
-//   height: 12px;
-  flex:1;
-  width:100%;
+  border-top: 9px solid green;
+  //   height: 12px;
+  flex: 1;
+  width: 100%;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
 `;
 const PayRollEmpData = styled.div`
 display:flex;
