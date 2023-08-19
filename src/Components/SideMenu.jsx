@@ -17,9 +17,10 @@ height:100vh;
 background:white;
 min-width:270px;
 `;
-const Wrapper = styled.div`height:120px`;
+const Wrapper = styled.div``;
 const HeaderSection = styled.div`
-  
+  height:140px;
+  background:#145044;
 `;
 const HeaderSectionImg = styled.img`
 width:100%;
@@ -53,9 +54,10 @@ const SideMenu = ({route}) => {
     <Container>
       <Wrapper>
         <HeaderSection className="flex aic jcc" >
-          <HeaderSectionImg src={require(".././images/logo.png")} alt="img" />
+          <HeaderSectionImg src={require(".././images/logo3.png")} alt="img" />
         </HeaderSection>
         <RoutesCon className="c">
+          <Link to="/" className="link">
           <Routes
             className="flex aic jcfs"
             style={{
@@ -65,11 +67,11 @@ const SideMenu = ({route}) => {
           >
             <Dashboard sx={{ color: "#292929", fontSize: "20px" }} />
             <RoutesText style={{ margin: "5px 6px 0" }}>
-              <Link to="/" className="link">
                 Dashboard
-              </Link>
             </RoutesText>
           </Routes>
+              </Link>
+              <Link to="/employment" className="link">
           <Routes
             className="flex aic jcfs"
             style={{
@@ -81,11 +83,10 @@ const SideMenu = ({route}) => {
               sx={{ color: "#292929", fontSize: "20px" }}
             />
             <RoutesText style={{ margin: "5px 6px 0" }}>
-              <Link to="/employment" className="link">
                 Emplyment Management
-              </Link>
             </RoutesText>
           </Routes>
+              </Link>
           <Routes className="flex aic jcsb">
             <span className="flex aic jcc">
               <PersonAddAlt1Outlined
@@ -158,6 +159,7 @@ const SideMenu = ({route}) => {
               />
             </span>
           </Routes>
+          <Link to="/settings" className="link">
           <Routes
             className="flex aic jcsb"
             style={{
@@ -165,19 +167,18 @@ const SideMenu = ({route}) => {
               background: route === "settings" && "#e8fbd5",
             }}
           >
-            <Link to="/settings" className="link">
               <span className="flex aic jcc">
                 <Settings sx={{ color: "#292929", fontSize: "20px" }} />
                 <RoutesText style={{ margin: "0 5px" }}>Settings</RoutesText>
               </span>
-            </Link>
             <span>
               {" "}
               <KeyboardArrowDown
                 sx={{ color: "#292929", fontSize: "18px", marginTop: "5px" }}
-              />
+                />
             </span>
           </Routes>
+                </Link>
         </RoutesCon>
       </Wrapper>
     </Container>

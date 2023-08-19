@@ -6,14 +6,16 @@ const Container = styled.div`
 box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75)
 box-sizing:border-box;
 height:100%;
-padding:0px 2px;
+padding:0px 12px;
 margin-top:-1px;
-padding-top:6px;
+// padding-top:6px;
 border-top:1px solid #eee;
+
 `;
 const Wrapper = styled.div`
   padding-top: -8px;
   box-sizing: border-box;
+  height:100%;
 `;
 const Links = styled.div`
 // display:flex;
@@ -29,7 +31,7 @@ ${mobile({fontSize:'11px'})}
 `
 const MobileFooter = ({route}) => {
   return (
-    <Container>
+    <Container >
       <Wrapper className="flex aic jcsb">
         <Links className="flex aic jcc fdc">
           <Link to="/" className="link">

@@ -1,5 +1,4 @@
-
- { AttachMoneyOutlined, ElectricalServicesOutlined, LocalAtmOutlined, Notifications, NotificationsNoneOutlined, PersonAddAlt1Outlined, PriceChangeOutlined, RemoveRedEyeOutlined, RequestQuoteOutlined, SavingsOutlined, SendOutlined, VisibilityOff, WifiCalling3Outlined, WifiOffOutlined } from '@mui/icons-material';
+import { AttachMoneyOutlined, ElectricalServicesOutlined, LocalAtmOutlined, Notifications, NotificationsNoneOutlined, PersonAddAlt1Outlined, PriceChangeOutlined, RemoveRedEyeOutlined, RequestQuoteOutlined, SavingsOutlined, SendOutlined, VisibilityOff, WifiCalling3Outlined, WifiOffOutlined } from '@mui/icons-material';
 import styled from 'styled-components';
 import { mmobile, mobile, newlmobile, smobile } from '../responsive';
 import MobileFooter from './MobileFooter';
@@ -10,36 +9,34 @@ const Container = styled.div`
   padding: 0 15px;
   ${smobile({ padding: "0 7px" })}
   ${newlmobile({ display: "block" })};
-  height: 100vh;
+  height: 100%;
 `;
 const Wrapper = styled.div`
 height:100%;
 `
 const Top = styled.div`
-height:9%;
-width:100%;
-`
-const Middle = styled.div`
-  height: 84%;
+  // height: 9%;
+
   width: 100%;
-  box-sizing:border-box; 
-padding-bottom:50px;
+  background: red;
 `;
-const Bottom = styled.div`
-  height: 8%;
-// padding-bottom:10px;
+const Middle = styled.div`
+  // height: 84%;
+  height: 100%;
   width: 100%;
-position:fixed;
-bottom:0;
+  box-sizing: border-box;
+  // padding-bottom: 50px;
+  background: red;
 `;
 const Header = styled.div`
-box-sizing:border-box;
-padding:6px 0;
-position:sticky;
-${mmobile({padding:'7px 0'})};
-
-top:0;
-`
+  box-sizing: border-box;
+  width: 100%;
+  height: 12%;
+  padding: 6px 0;
+  position: sticky;
+  ${mmobile({ padding: "7px 0" })};
+  top: 0;
+`;
 const HeaderLeft = styled.div``
 const HeaderRight = styled.div``
 const HeaderRightIcon = styled.div`
@@ -69,6 +66,7 @@ const QuickStatsCon = styled.div`
   padding:12px 7px;
   width:100%;
   flex:1;
+  // background:blue;
   ${smobile({padding:'2px 4px'})}
 `;
 const QuickStatsHeaderCon = styled.div`
@@ -125,6 +123,7 @@ const DashboardFunds = styled.div`
   max-height:130px;
   box-sizing: border-box;
   flex:1;
+  margin-top:2%;
   ${newlmobile({ padding: "15px 6px" })};
   ${smobile({ padding: "15px 10px",marginTop:'0' })};
 `;
@@ -166,14 +165,15 @@ const DashboardFundsButton = styled.button`
 
 const QuickActionsCon = styled.div`
 width:100%;
-height:max-content;
-flex:3;
-// background:red;
-padding-bottom:10px;
+height:88%;
+// flex:3;
+// background:green;
+// padding-bottom:10px;
 box-sizing:border-box;
 `
 const QuickActionsHeaderCon = styled.div`
-padding:10px 0;
+// padding:10px 0;
+box-sizing:border-box;
 ${newlmobile({padding:'5px 0'})};
 `
 const QuickActionsHeaderText = styled.span`
@@ -186,10 +186,10 @@ border:1px solid #eee;
 border-radius:7px;
 display:grid;
 grid-template-columns:1fr 1fr 1fr;
-grid-gap:20px;
+grid-gap:0px;
 box-sizing:border-box;
-padding:13px 0;
-height:93%;
+padding: 0;
+height:100%;
 `
 const QuickActions = styled.div`
 width:100%;
@@ -210,8 +210,8 @@ align-items:Center;
 justify-content:center;
 `
 const QuickActionsText = styled.span`
-font-size:10px;
-  ${smobile({fontSize:'10px'})}
+font-size:12px;
+  ${mobile({fontSize:'10px'})}
 `
 
 
@@ -221,7 +221,6 @@ const MobileDashboard = () => {
   return (
     <Container>
       <Wrapper className="flex aic jcsb fdc">
-        <Top>
           <Header className="flex aic jcsb">
             <HeaderLeft className="flex aic jcc">
               <HeaderImgCon>
@@ -234,10 +233,8 @@ const MobileDashboard = () => {
                 <NotificationsNoneOutlined />
               </HeaderRightIcon>
             </HeaderRight>
-          </Header>
-        </Top>
-        <Middle className="flex aifs jcfs fdc">
-          <QuickStatsCon>
+          </Header>       
+                    <QuickStatsCon>
             <QuickStatsHeaderCon>
               <QuickStatsHeaderText>QUICK STATS</QuickStatsHeaderText>
             </QuickStatsHeaderCon>
@@ -286,7 +283,7 @@ const MobileDashboard = () => {
               <QuickActions className="flex aic jcc fdc">
                 <QuickActionsIcons style={{ background: "#ffedec" }}>
                   <PersonAddAlt1Outlined
-                    sx={{ color: "#ea4e4b", fontSize: "20px" }}
+                    sx={{ color: "#ea4e4b", fontSize: "25px" }}
                   />
                 </QuickActionsIcons>
                 <QuickActionsText>Add Employee</QuickActionsText>
@@ -294,7 +291,7 @@ const MobileDashboard = () => {
               <QuickActions className="flex aic jcc fdc">
                 <QuickActionsIcons style={{ background: "#f0eeff" }}>
                   <PriceChangeOutlined
-                    sx={{ color: "#b6aded", fontSize: "20px" }}
+                    sx={{ color: "#b6aded", fontSize: "25px" }}
                   />
                 </QuickActionsIcons>
                 <QuickActionsText>Send Payslips</QuickActionsText>
@@ -302,7 +299,7 @@ const MobileDashboard = () => {
               <QuickActions className="flex aic jcc fdc">
                 <QuickActionsIcons style={{ background: "#fff2db" }}>
                   <RequestQuoteOutlined
-                    sx={{ color: "#fdb231", fontSize: "20px" }}
+                    sx={{ color: "#fdb231", fontSize: "25px" }}
                   />
                 </QuickActionsIcons>
                 <QuickActionsText>Edit Salaries</QuickActionsText>
@@ -310,21 +307,21 @@ const MobileDashboard = () => {
               <QuickActions className="flex aic jcc fdc">
                 <QuickActionsIcons style={{ background: "#e5f6fe" }}>
                   <AttachMoneyOutlined
-                    sx={{ color: "#2d7797", fontSize: "20px" }}
+                    sx={{ color: "#2d7797", fontSize: "25px" }}
                   />
                 </QuickActionsIcons>
                 <QuickActionsText>Get a Loan</QuickActionsText>
               </QuickActions>
               <QuickActions className="flex aic jcc fdc">
                 <QuickActionsIcons style={{ background: "#e7fbef" }}>
-                  <SendOutlined sx={{ color: "#219653", fontSize: "20px" }} />
+                  <SendOutlined sx={{ color: "#219653", fontSize: "25px" }} />
                 </QuickActionsIcons>
                 <QuickActionsText>Make a Transfer</QuickActionsText>
               </QuickActions>
               <QuickActions className="flex aic jcc fdc">
                 <QuickActionsIcons style={{ background: "#Eaf6fc" }}>
                   <WifiCalling3Outlined
-                    sx={{ color: "#32a7e2", fontSize: "20px" }}
+                    sx={{ color: "#32a7e2", fontSize: "25px" }}
                   />
                 </QuickActionsIcons>
                 <QuickActionsText>Airtime</QuickActionsText>
@@ -332,7 +329,7 @@ const MobileDashboard = () => {
               <QuickActions className="flex aic jcc fdc">
                 <QuickActionsIcons style={{ background: "#f8edf9" }}>
                   <WifiOffOutlined
-                    sx={{ color: "#b548c6", fontSize: "20px" }}
+                    sx={{ color: "#b548c6", fontSize: "25px" }}
                   />
                 </QuickActionsIcons>
                 <QuickActionsText>Data</QuickActionsText>
@@ -340,17 +337,13 @@ const MobileDashboard = () => {
               <QuickActions className="flex aic jcc fdc">
                 <QuickActionsIcons style={{ background: "#fff3e5" }}>
                   <ElectricalServicesOutlined
-                    sx={{ color: "#ff8700", fontSize: "20px" }}
+                    sx={{ color: "#ff8700", fontSize: "25px" }}
                   />
                 </QuickActionsIcons>
                 <QuickActionsText>Electricity</QuickActionsText>
               </QuickActions>
             </QuickActionsWrapper>
           </QuickActionsCon>
-        </Middle>
-        <Bottom>
-          <MobileFooter route="dashboard" />
-        </Bottom>
       </Wrapper>
     </Container>
   );

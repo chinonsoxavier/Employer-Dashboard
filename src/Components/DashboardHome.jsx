@@ -94,8 +94,8 @@ const Links = styled.div`
   }
 `;
 const LinksIcon = styled.div`
-height:30px;
-width:30px;
+height:40px;
+width:40px;
 border-radius:5px;
 display:flex;
 align-items:center;
@@ -111,7 +111,7 @@ const LinksText = styled.span`
 const Right = styled.div`
   height: max-content;
   flex:1;
-  min-width:140px;
+  min-width:175px;
 `;
 const PayRoll = styled.div`
   height: max-content;
@@ -237,7 +237,7 @@ const DashboardHome = () => {
               <Links>
                 <LinksIcon style={{ background: "#feeded" }}>
                   <PersonAddAlt1Outlined
-                    sx={{ color: "#292929", fontSize: "20px" }}
+                    sx={{ color: "#292929", fontSize: "23px" }}
                   />
                 </LinksIcon>
                 <LinksText>Add Employee</LinksText>
@@ -245,21 +245,21 @@ const DashboardHome = () => {
               <Links>
                 <LinksIcon style={{ background: "#cde6cb" }}>
                   <LocalAtmOutlined
-                    sx={{ color: "#292929", fontSize: "20px" }}
+                    sx={{ color: "#292929", fontSize: "23px" }}
                   />
                 </LinksIcon>
                 <LinksText>Pay Salaries</LinksText>
               </Links>
               <Links>
                 <LinksIcon style={{ background: "#9ad0b0" }}>
-                  <SendOutlined sx={{ color: "#292929", fontSize: "20px" }} />
+                  <SendOutlined sx={{ color: "#292929", fontSize: "23px" }} />
                 </LinksIcon>
                 <LinksText>Pay Compliances</LinksText>
               </Links>
               <Links>
                 <LinksIcon style={{ background: "#a6c6f6" }}>
                   <AccountBalanceWalletOutlined
-                    sx={{ color: "#292929", fontSize: "20px" }}
+                    sx={{ color: "#292929", fontSize: "23px" }}
                   />
                 </LinksIcon>
                 <LinksText>Quick Loan</LinksText>
