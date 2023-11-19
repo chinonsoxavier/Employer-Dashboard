@@ -9,7 +9,7 @@ import MobileDashboard from "../Components/MobileDashboard";
 import MobileFooter from "../Components/MobileFooter";
 const Container = styled.div`
   background: #eee;
-  height:100%;
+  height:100dvh;
   ${newlmobile({height:'100vh',background:'white'})}
 `;
 const Wrapper = styled.div`
