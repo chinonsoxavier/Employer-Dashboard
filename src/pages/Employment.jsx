@@ -1,4 +1,5 @@
-import styled from "styled-components";
+
+ styled from "styled-components";
 import SideMenu from "../Components/SideMenu";
 import Header from "../Components/Header";
 import HomeSection from "../Components/employment/HomeSection";
@@ -8,6 +9,7 @@ import MobileFooter from "../Components/MobileFooter";
 
 const Container = styled.div`
   background: white;
+height:100dvh;
 `;
 const Wrapper = styled.div``;
 const Con = styled.div``;
